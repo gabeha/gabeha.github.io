@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Raleway+Dots&display=swap');
+
+:root {
+    --light: #f7f5f7;
+    --dark: #232323;
+    --blue: #a9bfc9;
+    --grey: #cecece;
+    --beige: #efe6dc;
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+
+    background-color: var(--light);
+    background-image: linear-gradient(var(--light) 0%, var(--blue) 150%);
+
+    line-height: 1.6;
+    letter-spacing: normal;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 30px;
+  }
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+#photos, #home, #videos, #playground {
+    scroll-margin-top: 100px;
+}
+
+section {
+  /* border-bottom: 1px solid #999; */
+  text-align: center;
+  padding: 20px 20px;
+  height: 900px;
+  width: 100%;
+}
+
+.sections-heading {
+    letter-spacing: 30px;
+    font-size: 64px;
+    margin: 8px;
+}
+
+/* Navbar */
+
+#navbar {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-container {
+    background: rgba(247, 245, 247, 0.8);
+    color: var(--dark);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-sections {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-items {
+    padding: 30px;
+}
+
+.navbar-items .logo a {
+    font-size: 32px;
+}
+
+.navbar-items .menu-item a{
+    font-size: 16px;
+}
+
+.navbar-items a{
+    font-size: 32px;
+}
+
+.navbar-items ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-items ul li {
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+
+    .sections-heading {
+        letter-spacing: 10px;
+        font-size: 48px;
+        margin: 8px;
+    }
+
+    #navbar {
+        height: 100px;
+        padding: 10px;
+    }
+
+    .navbar-container {
+        
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+    }
+
+
+    .navbar-sections {
+        flex-direction: column;
+    }
+
+    .navbar-items {
+        padding: 0;
+    }
+
+    .navbar-items ul{
+        flex-direction: row;
+        padding: 0;
+        text-align: center;
+    }
+
+    .navbar-items a{
+        font-size: 24px;
+        letter-spacing: 0;
+    }
+
+    .navbar-items a i {
+        display: none;
+    }
+
+    .navbar-items:nth-child(2) {
+        order: 1;
+    }
+}
+
+/* HOME */
+
+#home {
+    margin-top: 64px;
+    height: 700px;
+    /* background-color: var(--blue); */
+}
+
+.home-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* overflow: auto; */
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.home-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.skills {
+    padding: 30px;
+    background-color: var(--light);
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+}
+
+.skills h1 {
+    text-align: center;
+}
+
+
+.skills p {
+    text-align: left;
+}
+
+.skills:hover {
+    transform: scale(1.015);
+    transition: 0.2s ease-in-out;
+}
+
+.home-about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.home-about-card img {
+    max-width: 80%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+}
+
+.home-about-card img:hover {
+    transform: scale(1.015);
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    #home {
+        margin-top: 0;
+        height: 900px;
+    }
+
+    .home-container {
+        margin: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .home-about-card {
+        grid-row: 1;
+    }
+
+    
+}
+
+/* PLAYGROUND */
+
+
+#playground {
+    height: 700px;
+}
+
+.playground-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.playground-item {
+    padding: 30px;
+    background-color: var(--light);
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+}
+
+.playground-item:nth-of-type(1) {
+    grid-row: 1 / span 2;
+}
+
+@media (max-width:768px) {
+
+    #playground {
+        height: 1150px;
+    }
+
+    .playground-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}

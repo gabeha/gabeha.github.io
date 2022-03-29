@@ -58,7 +58,7 @@ img {
   width: 100%;
 }
 
-#photos, #home, #videos, #playground {
+#photos, #home, #videos, #playground, #blog {
     scroll-margin-top: 100px;
 }
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="\static\utilities.css">
     <!-- <link rel="stylesheet" href="\static\frn.css"> -->
     <script src="https://kit.fontawesome.com/5f87ad780e.js" crossorigin="anonymous"></script>
+    <script src="\js\weather-script.js" defer></script>
     <title>gabriel hauss</title>
 </head>
 <body>
@@ -162,11 +163,29 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim tenetur placeat ducimus? Aliquid, porro dicta numquam minus recusandae minima maiores dolore quaerat magni omnis soluta quod quam reiciendis dignissimos.
                 </p>
             </div>
-            <div class="playground-item">
-                <h1>Weather</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugit et aliquid quidem molestiae tempore earum esse, eaque libero enim blanditiis magnam ab nobis cum quam non ut, similique beatae.
-                </p>
+            <div class="playground-item" id="weather">
+                <div class="weather-card">
+                    <div class="search">
+                        <input type="text" class="search-bar" placeholder="Search weather...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="weather loading">
+                        <h1 class="city">Maastricht</h1>
+                        <h1 class="temp">17 &#176 C</h1>
+                        <div class="flex-icon-desc">
+                            <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon">
+                            <div class="description">
+                                Cloudy
+                            </div>
+                        </div>
+                        <div class="humidity">
+                            Humididty: 20%
+                        </div>
+                        <div class="wind">
+                            Wind speed: 10 km/h
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="playground-item">
                 <h1>Football</h1>

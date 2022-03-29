@@ -410,7 +410,7 @@ section {
 
 
 #playground {
-    height: 700px;
+    height: 900px;
 }
 
 .playground-container {
@@ -429,10 +429,94 @@ section {
     border-radius: 8px;
     margin: 10px;
     box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.playground-item:nth-child(2) {
+    background-image: url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .playground-item:nth-of-type(1) {
     grid-row: 1 / span 2;
+}
+
+/* Weather */
+
+.weather-card {
+    border-radius: 8px;
+    background: rgba(36, 34, 36, 0.6);
+    color: var(--light);
+    padding: 20px;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search button {
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 28px;
+    width: 28px;
+    background: rgba(36, 34, 36, 0.3);
+    color: var(--light);
+    margin-left: 10px;
+}
+
+.search button:hover{
+    background: rgba(36, 34, 36, 0.9);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.search input {
+    width: calc(100% - 40px);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 0.5em 0.8em;
+    border-radius: 16px;
+    background: rgba(36, 34, 36, 0.3);
+    color: var(--light);
+}
+
+.weather {
+    margin-top: 10px;
+}
+
+.weather .icon {
+    width: 20%;
+    height: 20%;
+}
+
+.flex-icon-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.weather .description {
+    text-transform: capitalize;
+}
+
+.weather.loading {
+    visibility: hidden;
+    margin-top: 0px;
+    height: 0px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
 }
 
 @media (max-width:768px) {

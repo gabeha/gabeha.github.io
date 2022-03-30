@@ -160,8 +160,12 @@ section {
     .navbar-sections {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        padding: 20px 0px;
+        justify-content: space;
+        padding: 10px 0px;
+    }
+
+    .mobile-header {
+        justify-content: space-between;
     }
 
     #menu-toggle {
@@ -185,6 +189,11 @@ section {
 
     .column-view {
         flex-direction: column;
+    }
+
+    .navbar-items .logo a {
+        font-size: 25px;
+        letter-spacing: 5px;
     }
 
 }

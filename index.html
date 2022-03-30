@@ -9,7 +9,6 @@
     <!-- <link rel="stylesheet" href="\static\frn.css"> -->
     <script src="https://kit.fontawesome.com/5f87ad780e.js" crossorigin="anonymous"></script>
     <script src="\js\weather-script.js" defer></script>
-    <script src="\js\football-script.js"></script>
     <title>gabriel hauss</title>
 </head>
 <body>
@@ -17,21 +16,28 @@
     <section id="navbar">
         <div class="navbar-container">
             <div class="navbar-sections">
-                <div class="navbar-items">
-                    <h4 class="logo"><a href="#home">gabriel hauss</a></h4>
+                <div class="mobile-header">
+                    <div class="navbar-items">
+                        <h4 class="logo"><a href="#home">gabriel hauss</a></h4>
+                    </div>
+                    <button class="navbar-items" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
+                
                 <div class="navbar-items">
-                    <ul>
+                    <ul class="navbar-links">
+                        <li class="menu-item"><a href="#blog">blog</a></li>
                         <li class="menu-item"><a href="#photos" >photos</a></li>
                         <li class="menu-item"><a href="#videos" >videos</a></li>
                         <li class="menu-item"><a href="#playground">playground</a></li>
-                        <li class="menu-item"><a href="#blog">blog</a></li>
+                        <li class="menu-item"><a href="#resume">resume</a></li>
                     </ul>
                 </div>
-                <div class="navbar-items">
+                <!-- <div class="navbar-items">
                     <a href="mailto:gabriel.hauss@gmail.com"><i class="fas fa-address-card"></i></a>
                     <a href="https://www.linkedin.com/in/gabriel-hauss-a89744205/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -71,6 +77,10 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="blog">
+        <h1 class="sections-heading">blog</h1>
     </section>
   
     <section id="photos">
@@ -155,10 +165,6 @@
         </div>
     </section>
 
-    <section id="blog">
-        <h1 class="sections-heading">blog</h1>
-    </section>
-
     <section id="playground">
         <h1 class="sections-heading">playground</h1>
         <div class="playground-container">
@@ -200,6 +206,10 @@
             </div>
         </div>
     </section>
+
+    <section id="resume">
+        <h1 class="sections-heading">resume</h1>
+    </section>
     
     <!-- Footer -->
     <footer class="footer ">
@@ -210,5 +220,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="\js\mobile-navbar.js"></script>
 </body>
 </html>

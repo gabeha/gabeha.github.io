@@ -14,6 +14,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,9 @@ body {
 
 ul {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
@@ -153,6 +157,10 @@ section {
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+.highlighted {
+    color: var(--blue);
 }
 
 @media (max-width: 768px) {
@@ -550,3 +558,4 @@ section {
         grid-template-rows: 1fr;
     }
 }
+

@@ -78,6 +78,7 @@ section {
     letter-spacing: 30px;
     font-size: 64px;
     margin: 8px;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -445,15 +446,11 @@ section {
 
 }
 
-
-
-
-
 /* PLAYGROUND */
 
 
 #playground {
-    height: 900px;
+    height: 850px;
 }
 
 .playground-container {

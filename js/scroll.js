@@ -31,10 +31,18 @@ document.addEventListener("DOMContentLoaded", function(){
          if(scroll_top < last_scroll_top) {
               el_autohide.classList.remove('scrolled-down');
               el_autohide.classList.add('scrolled-up');
+              	if (links.classList.contains("mobile-nav")) {
+                    links.classList.toggle("mobile-nav");
+                    section.classList.toggle("column-view");
+                }
           }
           else {
               el_autohide.classList.remove('scrolled-up');
               el_autohide.classList.add('scrolled-down');
+              if (links.classList.contains("mobile-nav")) {
+                    links.classList.toggle("mobile-nav");
+                    section.classList.toggle("column-view");
+                }
           }
           last_scroll_top = scroll_top;
     });

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\static\styles.css">
+    <link rel="stylesheet" href="\static\utilities.css">
+    <link rel="stylesheet" href="\static\photos.css">
+    <!-- <link rel="stylesheet" href="\static\frn.css"> -->
+    <script src="https://kit.fontawesome.com/5f87ad780e.js" crossorigin="anonymous"></script>
+    <!-- <script src="\js\weather-script.js" defer></script> -->
+    <title>gabriel hauss</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <section class="autohide" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-sections">
+                <div class="mobile-header">
+                    <div class="navbar-items">
+                        <h4 class="logo"><a href="\index.html" class="logo-name">gabriel hauss</a></h4>
+                    </div>
+                    <button class="navbar-items" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                
+                <div class="navbar-items" id="navigation">
+                    <ul class="navbar-links">
+                        <li class="menu-item"><a href="\index.html#blog">blog</a></li>
+                        <li class="menu-item"><a href="\index.html#photos" id="bla">photos</a></li>
+                        <li class="menu-item"><a href="\index.html#videos">videos</a></li>
+                        <li class="menu-item"><a href="\index.html#playground">playground</a></li>
+                        <li class="menu-item"><a href="\index.html#resume">resume</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="navbar-items">
+                    <a href="mailto:gabriel.hauss@gmail.com"><i class="fas fa-address-card"></i></a>
+                    <a href="https://www.linkedin.com/in/gabriel-hauss-a89744205/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="photos-page">
+        <div class="pages-container">
+            <h1 class="pages-heading">photos</h1>
+            <div class="buttons-container">
+                <div class="button-topic highlighted-btn" id="button-1" onclick="selectorFunc(id)">Portugal</div>
+                <div class="button-topic" id="button-2" onclick="selectorFunc(id)">Austria</div>
+                <div class="button-topic" id="button-3" onclick="selectorFunc(id)">Limburg</div>
+                <div class="button-topic" id="button-4" onclick="selectorFunc(id)">Maastricht</div>
+                <div class="button-topic" id="button-5" onclick="selectorFunc(id)">Vancouver</div>
+                <div class="button-topic" id="button-6" onclick="selectorFunc(id)">Slovenia</div>
+            </div>
+            <div class="photos-page-container">
+                <div class="photos-page-topic" id="section-1">
+                    <div class="photos-element">
+                        <img src="\assets\portugal-1.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-2.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-3.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-4.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-5.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photos-page-topic hide-topic" id="section-2">
+                    <div class="photos-element">
+                        <img src="\assets\portugal-1.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-1.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-1.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-1.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-5.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photos-page-topic hide-topic" id="section-3">
+                    <div class="photos-element">
+                        <img src="\assets\portugal-2.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-2.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-2.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-2.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-5.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photos-page-topic hide-topic" id="section-4">
+                    <div class="photos-element">
+                        <img src="\assets\portugal-3.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-3.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-3.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-3.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-5.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photos-page-topic hide-topic" id="section-5">
+                    <div class="photos-element">
+                        <img src="\assets\portugal-4.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-4.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-4.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-4.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-5.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photos-page-topic hide-topic" id="section-6">
+                    <div class="photos-element">
+                        <img src="\assets\portugal-5.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-5.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-5.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-5.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-5.jpg" alt="">
+                    </div>
+                    <div class="photos-element">
+                        <img src="\assets\portugal-6.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer ">
+        <div class="container">
+            <div class="text-center text-dark">
+                <h1>Gabriel Hauss</h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="\js\mobile-navbar.js"></script>
+    <script src="\js\scroll.js"></script>
+    
+    <!-- <script>
+        document.getElementById("bla").style.textDecoration = "underline";
+    </script> -->
+    <script src="\js\photo-gallery.js"></script>
+</body>
+</html>

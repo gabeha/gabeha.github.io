@@ -91,14 +91,26 @@ section {
 /* Navbar */
 
 #navbar {
-    height: 64px;
+    height: 96px;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99;
+    /* background-color: red; */
+    position: fixed;
+    top: 0;
+}
+
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.1s ease-in-out;
+}
+
+.scrolled-up{
+    transform:translateY(0); transition: all 0.1s ease-in-out;
 }
 
 .navbar-container {
-    background: rgba(247, 245, 247, 0.8);
+    background: rgba(247, 245, 247, 1);
     color: var(--dark);
     overflow: hidden;
     position: fixed;
@@ -209,7 +221,7 @@ section {
 /* HOME */
 
 #home {
-    margin-top: 64px;
+    margin-top: 96px;
     height: 500px;
     /* background-color: var(--blue); */
 }
@@ -276,7 +288,7 @@ section {
 
 @media (max-width: 768px) {
     #home {
-        margin-top: 10px;
+        margin-top: 64px;
         height: 1250px;
     }
 
@@ -335,6 +347,9 @@ section {
 
 .location h1 {
     color: var(--beige);
+    /* font-size: 16px; */
+    font-weight: 50;
+    letter-spacing: 10px;
     font-size: 40px;
 }
 

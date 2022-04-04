@@ -309,7 +309,8 @@ section {
 /* PHOTOS */
 
 #photos {
-    height: 1100px;
+    height:1200px;
+    padding: 0px;
 }
 
 #photos h1 {
@@ -317,42 +318,60 @@ section {
 }
 
 .photos-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("../assets/slovenia-banner.jpg");
+    background-size: cover;
 }
 
-.photo img {
+.photos-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    padding: 20px 60px;
+}
+
+.text-about-me {
+    max-width: 400px;
+    background-color: rgba(36, 34, 36, 0.7);
+    padding: 16px;
     border-radius: 8px;
 }
 
-.photo:hover {
-    transform: scale(0.975);
-    transition: 0.2s ease-in-out;
+.text-about-me p {
+    color: var(--light);
+    text-align: left;
+    font-size: 20px;
+}
+
+.photos-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: none;
+    color: var(--dark);
+    font-weight: 300;
+    letter-spacing: 5x;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--light);
+    font-size: 20px;
+}
+
+.photos-button:hover {
+    background-color: transparent;
+    color: var(--light);
     cursor: pointer;
 }
 
-.photo {
-    position: relative;
-}
-
-.location {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.location h1 {
-    color: var(--beige);
-    /* font-size: 16px; */
-    font-weight: 50;
-    letter-spacing: 10px;
-    font-size: 40px;
-}
 
 @media (max-width: 768px) {
     #photos {

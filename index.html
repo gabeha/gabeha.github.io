@@ -9,9 +9,11 @@
     <!-- <link rel="stylesheet" href="\static\frn.css"> -->
     <script src="https://kit.fontawesome.com/5f87ad780e.js" crossorigin="anonymous"></script>
     <script src="\js\weather-script.js" defer></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script src="\js\pdf.js" defer></script>
     <title>gabriel hauss</title>
 </head>
-<body>
+<body onload="openPDF()">
     <!-- Navbar -->
     <section class="autohide" id="navbar">
         <div class="navbar-container">
@@ -209,6 +211,13 @@
 
     <section id="resume">
         <h1 class="sections-heading">resume</h1>
+        <div class="resume-container">
+            <iframe class="pdf-doc" src="\assets\CV_Gabriel_Hauss.pdf"></iframe>
+            <div class="cv">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident harum, obcaecati eos aut praesentium debitis a atque, id minus aspernatur. Expedita reiciendis sed est aliquid ratione quas, quod doloribus!</p>
+            </div>
+        </div>
+
     </section>
     
     <!-- Footer -->
@@ -224,15 +233,5 @@
     <script src="\js\mobile-navbar.js"></script>
     <script src="\js\scroll.js"></script>
     <script src="\js\photo-gallery.js"></script>
-    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-    <script type="text/javascript">
-        document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-            var adobeDCView = new AdobeDC.View({clientId: "2cb1bfc97f854ba9ae5f0460c2b79c22"});
-            adobeDCView.previewFile({
-                content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
-                metaData:{fileName: "Bodea Brochure.pdf"}
-            }, {embedMode: "LIGHT_BOX"});
-        });
-    </script>
 </body>
 </html>

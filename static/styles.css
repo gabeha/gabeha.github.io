@@ -241,7 +241,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: left;
+    justify-content: space-evenly;
 }
 
 .skills {
@@ -270,7 +270,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 20px;
 }
 
@@ -282,8 +282,33 @@ section {
     box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
 }
 
+.contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 30px;
+    background-color: var(--light);
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+}
+
+.contact-card h5 {
+    font-size: 16px;
+}
+
 .contact-links a {
     font-size: 30px;
+}
+
+.contact-card:hover {
+    transform:translateY(-4px);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0s, box-shadow 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0s;
+}
+
+.contact-links a:hover {
+    cursor: pointer;
 }
 
 .home-about-card img:hover {
@@ -483,10 +508,17 @@ section {
 }
 
 .playground-intro {
-    font-weight: 400;
-    text-align: left;
-    font-size: 20px;
+    max-width: 1100px;
     padding: 0 20px;
+    display: flex;
+    margin: 2vh auto;
+
+}
+
+.playground-intro p {
+    font-weight: 400;
+    /* text-align: left; */
+    font-size: 20px;
 }
 
 .playground-container {

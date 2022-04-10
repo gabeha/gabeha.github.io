@@ -70,7 +70,7 @@ section {
   /* border-bottom: 1px solid #999; */
   text-align: center;
   padding: 20px 20px;
-  height: 900px;
+  /* height: 900px; */
   width: 100%;
 }
 
@@ -375,7 +375,6 @@ section {
 .text-about-me p {
     color: var(--light);
     text-align: left;
-    font-size: 20px;
 }
 
 .photos-button {
@@ -403,10 +402,6 @@ section {
 
 
 @media (max-width: 768px) {
-    /* #photos {
-        margin-top: 0;
-        height: 1150px;
-    } */
 
     .photos-container {
         margin: 0;
@@ -432,7 +427,10 @@ section {
 }
 
 #videos .subheading {
-    margin: 0px 0px 16px 0px;
+    margin-left: -30px;
+    font-weight: 400;
+    /* text-align: center; */
+    font-size: 20px;
 }
 
 .video-container {
@@ -500,11 +498,22 @@ section {
     }
 }
 
+@media screen and (max-width: 530px) {
+
+    #videos .subheading {
+        margin-left: 0px;
+    }
+}
+
 /* PLAYGROUND */
 
 
 #playground {
     height: 100%;
+}
+
+#playground .sections-heading {
+    padding-bottom: 0px;
 }
 
 .playground-intro {

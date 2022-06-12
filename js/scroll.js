@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function(){
     window.addEventListener('scroll', function() {
           let scroll_top = window.scrollY;
           console.log(scroll_top)
-         if(scroll_top < last_scroll_top && scroll_top === 0) {
+         if(scroll_top < last_scroll_top) {
               el_autohide.classList.remove('scrolled-down');
               el_autohide.classList.add('scrolled-up');
               	if (links.classList.contains("mobile-nav")) {

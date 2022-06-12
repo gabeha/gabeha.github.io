@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function(){
   el_autohide = document.querySelector('.autohide');
 
   if(el_autohide){
-    var last_scroll_top = 0;
+    var last_scroll_top = 300;
     window.addEventListener('scroll', function() {
           let scroll_top = window.scrollY;
-          console.log(scroll_top)
+          console.log(last_scroll_top)
          if(scroll_top < last_scroll_top) {
               el_autohide.classList.remove('scrolled-down');
               el_autohide.classList.add('scrolled-up');

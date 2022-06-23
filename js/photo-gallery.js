@@ -10,7 +10,7 @@
             if (div.classList.contains('hide-topic')) {
                 div.classList.remove('hide-topic');
                 btn.classList.add('highlighted-btn');
-                for (let i = 1; i<7; i++) {
+                for (let i = 1; i<8; i++) {
                     if(i != number) {
                         console.log(i);
                         let divToAdd = "section-" + i;
@@ -25,7 +25,7 @@
             }
             else {
 
-                for (let i = 1; i<7; i++) {
+                for (let i = 1; i<8; i++) {
                     if(i != number) {
                         dtr = document.getElementById(divToRemove);
                         let divToRemove = "section-" + i;

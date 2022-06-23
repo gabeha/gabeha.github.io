@@ -52,11 +52,12 @@
             <h1 class="pages-heading">photos</h1>
             <div class="buttons-container">
                 <div class="button-topic highlighted-btn" id="button-1" onclick="selectorFunc(id)">Portugal</div>
-                <div class="button-topic" id="button-2" onclick="selectorFunc(id)">MSP Gala</div>
-                <div class="button-topic" id="button-3" onclick="selectorFunc(id)">Austria</div>
-                <div class="button-topic" id="button-4" onclick="selectorFunc(id)">Maastricht</div>
-                <div class="button-topic" id="button-5" onclick="selectorFunc(id)">Vancouver</div>
-                <div class="button-topic" id="button-6" onclick="selectorFunc(id)">Slovenia</div>
+                <div class="button-topic" id="button-2" onclick="selectorFunc(id)">FSE Gala</div>
+                <div class="button-topic" id="button-3" onclick="selectorFunc(id)">MSP Gala</div>
+                <div class="button-topic" id="button-4" onclick="selectorFunc(id)">Austria</div>
+                <div class="button-topic" id="button-5" onclick="selectorFunc(id)">Maastricht</div>
+                <div class="button-topic" id="button-6" onclick="selectorFunc(id)">Vancouver</div>
+                <div class="button-topic" id="button-7" onclick="selectorFunc(id)">Slovenia</div>
             </div>
             <div class="photos-page-container">
                 <div class="photos-page-topic" id="section-1">
@@ -132,6 +133,14 @@
                     </div>
                 </div>
                 <div class="photos-page-topic hide-topic" id="section-2">
+                    <div class="photos-col" id="section-2.1">
+                        
+                    </div>
+                    <div class="photos-col" id="section-2.2">
+                        
+                    </div>
+                </div>
+                <div class="photos-page-topic hide-topic" id="section-3">
                     <div class="photos-col">
                         <div class="photos-element">
                             <img src="\assets\mspgala\mspgala1000.jpg" alt="">
@@ -887,7 +896,7 @@
                         </div> 
                     </div>
                 </div>
-                <div class="photos-page-topic hide-topic" id="section-3">
+                <div class="photos-page-topic hide-topic" id="section-4">
                     <div class="photos-col">
                         <div class="photos-element">
                             <img src="\assets\austria\austria-1.jpg" alt="">
@@ -1001,7 +1010,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="photos-page-topic hide-topic" id="section-4">
+                <div class="photos-page-topic hide-topic" id="section-5">
                     <div class="photos-col">
                         <div class="photos-element">
                             <img src="\assets\maastricht\maastricht-1.jpg" alt="">
@@ -1140,7 +1149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="photos-page-topic hide-topic" id="section-5">
+                <div class="photos-page-topic hide-topic" id="section-6">
                     <div class="photos-col">
                         <div class="photos-element">
                             <img src="\assets\vancouver\vancouver-1.jpg" alt="">
@@ -1273,7 +1282,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="photos-page-topic hide-topic" id="section-6">
+                <div class="photos-page-topic hide-topic" id="section-7">
                     <div class="photos-col">
                         <div class="photos-element">
                             <img src="\assets\slovenia-1.jpg" alt="">
@@ -1367,6 +1376,19 @@
 
     <script src="\js\mobile-navbar.js"></script>
     <script src="\js\scroll.js"></script>
+    <script>
+        console.log()
+        var column1 = document.getElementById("section-2.1");
+        var column2 = document.getElementById("section-2.2")
+        for (var i=1; i <= 213; i++) {
+            if (i !== 141 && i !== 142) {
+                column1.innerHTML += '<div class="photos-element"><img src="\\assets\\fsegala\\fsegala-' + i +'.jpg" alt=""></div>'
+            }
+        }
+        for (var i=214; i <= 432; i++) {
+            column2.innerHTML += '<div class="photos-element"><img src="\\assets\\fsegala\\fsegala-' + i +'.jpg" alt=""></div>'
+        }
+    </script>
     
     <!-- <script>
         document.getElementById("bla").style.textDecoration = "underline";

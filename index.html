@@ -1,233 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="\static\styles.css">
-    <link rel="stylesheet" href="\static\utilities.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- <link rel="stylesheet" href="\static\frn.css"> -->
-    <script src="https://kit.fontawesome.com/5f87ad780e.js" crossorigin="anonymous"></script>
-    <script src="\js\weather-script.js" defer></script>
-    <title>gabriel hauss</title>
-</head>
-<body>
-    <!-- Navbar -->
-    <section class="autohide" id="navbar">
-        <div class="navbar-container">
-            <div class="navbar-sections">
-                <div class="mobile-header">
-                    <div class="navbar-items">
-                        <h4 class="logo"><a href="#home" class="logo-name">gabriel hauss</a></h4>
-                    </div>
-                    <button class="navbar-items" id="menu-toggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-                
-                <div class="navbar-items" id="navigation">
-                    <ul class="navbar-links">
-                        <li class="menu-item"><a href="#photos">photos</a></li>
-                        <li class="menu-item"><a href="#videos">videos</a></li>
-                        <li class="menu-item"><a href="#playground">playground</a></li>
-                        <li class="menu-item"><a href="#blog">blog</a></li>
-                        <li class="menu-item"><a href="#resume">resume</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Moved</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      .centered-text {
+        text-align: center;
+      }
+      .link {
+        color: #007bff;
+        text-decoration: none;
+      }
 
-    <section id="home">
-        <div class="home-container">
-            <div class="home-skills">
-                <div class="skills">
-                    <h1>Web Development</h1>
-                    <p>
-                        Developing websites and solving problems using code has become a passion of mine. Aside from WebDev, I enjoy Data Science.
-                    </p>
-                </div>
-                <div class="skills">
-                    <h1>Robotics & Automation</h1>
-                    <p>
-                        I am curious about what the future of this field holds and want to actively shape it.
-                    </p>
-                </div>
-            </div>
-            <div class="home-about-card">
-                <div class="pic-name">
-                    <img src="\assets\portrait.jpg" alt="portrait">
-                    <h3>Gabriel Hauss, 23 years old</h3>
-                </div>
-
-                <div class="contact-card">
-                    <h5>Contact me!</h5>
-                    <div class="contact-links">
-                        <a href="mailto:gabriel.hauss@gmail.com"><i class="fas fa-address-card"></i></a>
-                        <a href="https://www.linkedin.com/in/gabriel-hauss-a89744205/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://twitter.com/gabeha2" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="home-skills">
-                <div class="skills">
-                    <h1>Photography</h1>
-                    <p>
-                        In these hectic times, I sometimes enjoy going out trying to capture the quickly fading moments.
-                    </p>
-                </div>
-                <div class="skills">
-                    <h1>Videography</h1>
-                    <p>
-                        After High School, I travelled for more than a year. I got to know many creative minds, which sparked my passion for creating memories. 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-  
-    <section id="photos">
-        <h1 class="sections-heading">photos</h1>
-        <div class="photos-container">
-            <div class="photos-banner">
-                <div class="text-about-me">
-                    <p>4 years ago, I came back from my travels and bought a camera. I got a LUMIX G70 with the kit lens and a tripod. Pretty soon, I realized I wanted a bit more versatility and got a 1.7 24mm portrait lens. I started editing the photos on my phone until I saved up enough to buy a Laptop - that was in early 2019.</p>
-                    <p>From that point on, I took photos on every occasion - I got particularly fascinated by Fan Ho's street photography. So I started roaming the streets of my home town, Essen. During that time, I worked as a waiter in a Burger restaurant which allowed me to take long weekends off and travel around Europe. Many of my favourite pictures come from those trips.</p>
-                </div>
-                <button class="photos-button" onclick="photosRedirect()">
-                    See the pics!
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section id="videos">
-        <h1 class="sections-heading">videos</h1>
-        <h1 class="subheading">(I make videos on YouTube... every now and then!)</h1>
-        <div class="video-container">
-            <div class="video-item">
-                <div class="video-description">
-                    <h1>PART OF ME</h1>
-                    <p>
-                        "PART OF ME" is a film portraying the journey of an athlete. From his first steps on the Rugby pitch to his present day gym career, Akiya's love for exercise has governed his life. He talks about the reasons why he embraces going through pain and suffering and what it means to him as a person.
-                    </p>
-                </div>
-                <div class="video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y6NCqAnt09I" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="video-item">
-                <div class="video-description">
-                    <h1>RO-BOTANY</h1>
-                    <p>
-                        With the rising demand for plant crops, there is a need for technologies that can help to meet the demand, as well as improve the quality and quantity of the products supplied. The aim of this project was to develop an automated plant box as a potential solution to optimize the production of plant crops. It was made to monitor conditions such as humidity, temperature, and soil moisture percentage, adjusting them using a Raspberry Pi and several Arduinos. 
-                    </p>
-                </div>
-                <div class="video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A9y8G1zTP-8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="playground">
-        <h1 class="sections-heading">playground</h1>
-        <div class="playground-intro">
-            <p>The "playground" is a place where I play around and showcase API's that I find interesting.</p>
-        </div>
-        <div class="playground-container">
-            <div class="playground-item">
-                <h1>Spotify</h1>
-                <p>
-                    Here is where I will play around and show the results of the Spotify API in the future... :)
-                </p>
-            </div>
-            <div class="playground-item" id="weather">
-                <div class="weather-card">
-                    <div class="search">
-                        <input type="text" class="search-bar" placeholder="Search weather...">
-                        <button><i class="fas fa-search"></i></button>
-                    </div>
-                    <div class="weather loading">
-                        <h1 class="city">Maastricht</h1>
-                        <h1 class="temp">17 &#176 C</h1>
-                        <div class="flex-icon-desc">
-                            <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon">
-                            <div class="description">
-                                Cloudy
-                            </div>
-                        </div>
-                        <div class="humidity">
-                            Humididty: 20%
-                        </div>
-                        <div class="wind">
-                            Wind speed: 10 km/h
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="playground-item">
-                <h1>Football</h1>
-                <p>
-                    Does anyone know a good, free Football stats/scores API? All I found were paid... Just wanna show my favourite club's - Hamburger SV - current standing and most recent match score.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog">
-        <h1 class="sections-heading">blog</h1>
-        <div class="blog-container">
-            <div class="blog-post">
-                <h1>Title</h1>
-                <h3>Subtitle</h3>
-                <h5>01/01/1970</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus officiis aliquam iusto provident quae optio, perspiciatis dignissimos iure ex repudiandae nulla sequi quis architecto aspernatur accusantium debitis libero laboriosam reiciendis.</p>
-            </div>
-            <div class="blog-post">
-                <h1>Title</h1>
-                <h3>Subtitle</h3>
-                <h5>01/01/1970</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus officiis aliquam iusto provident quae optio, perspiciatis dignissimos iure ex repudiandae nulla sequi quis architecto aspernatur accusantium debitis libero laboriosam reiciendis.</p>
-            </div>
-            <div class="blog-post">
-                <h1>Title</h1>
-                <h3>Subtitle</h3>
-                <h5>01/01/1970</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus officiis aliquam iusto provident quae optio, perspiciatis dignissimos iure ex repudiandae nulla sequi quis architecto aspernatur accusantium debitis libero laboriosam reiciendis.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="resume">
-        <h1 class="sections-heading">resume</h1>
-        <div class="resume-container">
-            <iframe class="pdf-doc" src="\assets\CV_Gabriel_Hauss.pdf"  type="application/pdf"></iframe>
-        </div>
-
-    </section>
-    
-    <!-- Footer -->
-    <footer class="footer ">
-        <div class="container">
-            <div class="text-center text-dark">
-                <h1>Gabriel Hauss</h1>
-                <p>Copyright &copy; 2022</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="\js\mobile-navbar.js"></script>
-    <script src="\js\scroll.js"></script>
-    <script src="\js\photo-gallery.js"></script>
-    <script>
-        function photosRedirect() {
-                location.href = "photos.html";
-        }
-    </script>
-</body>
+      .link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centered-text">
+      My portfolio has moved to
+      <a href="https://www.gabrielhauss.com" class="link">gabrielhauss.com</a>.
+    </div>
+  </body>
 </html>
